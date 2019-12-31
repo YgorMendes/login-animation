@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open sans';
+}
+
+textarea:focus, input:focus, button:focus, select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+} 
+
+@media only screen and (max-width: 420px) {
+  section{
+    background-color: #262626;
+  }
+  .container-login{
+    width: 100%;
+    height: 100vh;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 400px;
+  }
+
+  video{
+    display: none;
+    position: fixed;
+    left: -80px;
+    /* z-index:0; */
+    width: 575px;
+    top: -5px;
+  }
+
+  .ativo{
+    display: block;
+  }
+
+  h1{
+    position: fixed ;
+    top: 300px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #F2EBD5;
+    /* z-index: 2; */
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  input{
+    height: 50px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color:  #F2EBD5;
+    box-shadow: none;
+    border: none;
+    border-radius: 8px;
+  }
+
+  ::placeholder{
+    font-size: 17px;
+    color: #F26F63;
+    font-weight: 600;
+  }
+
+  button{
+    height: 50px;
+    margin: 25px 0 40px 0;
+    font-size: 20px;
+    color: #F2EBD5;
+    background-color: #F26F63;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: none;
+    border: none;
+    border-radius: 8px;
+  }
+
+  .links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .linha{
+    width: 2px;
+    height: 24px;
+    border-radius: 2px;
+    background-color: #F2EBD5;
+  }
+
+  a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #F2EBD5;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .rosa{
+    color: #F26F63;
+  }
+}
